@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            color: red;
+        }
+        button{
+            padding: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Index Page</h1>
+    <h3 id="welcome">Welcome to Chitkara University</h3>
+    <button id="submit">Exit</button>
+</body>
+</html>
+
+<script>
+   
+
+    var greet = document.getElementById("welcome");
+    console.log(greet);
+
+    var btn = document.getElementById("submit");
+
+    btn.addEventListener("click",handleClick)
+    var flag = false;
+    function handleClick(){
+
+        flag = !flag;
+        // alert("Button Clicked");
+        if(flag){
+            greet.innerHTML = "Thank you for visiting Chitkara University";
+            greet.style.color = "green";
+            btn.innerHTML = "Welcome";
+        }
+        else{
+            greet.innerHTML = "Welcome to Chitkara University";
+            greet.style.color = "red";
+            btn.innerHTML = "Exit";
+        }
+
+    }
+</script>
