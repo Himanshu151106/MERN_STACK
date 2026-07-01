@@ -1,7 +1,10 @@
 #container{
-    border: 2px solid red;
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
 }
 /* #container > div{
     border: 2px solid black;
@@ -11,8 +14,8 @@
 
 #formContainer{
     width: 30%;
-    border: 2px solid black;
     padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
 }
 #formContainer div{
@@ -24,5 +27,28 @@
 
 button{
     padding: 20px;
+}
 
+#movieCards{
+    height : 600px;
+    width : 60%;
+    display : flex;
+    flex-wrap : wrap;
+    gap : 10px;
+}
+
+.card{
+    height : 300px;
+    width : 35%;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    padding : 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+img{
+    height : 180px;
+    width : 90%;
 }
